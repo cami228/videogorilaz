@@ -1,0 +1,87 @@
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* === HEADER === */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    border-bottom: 2px solid red;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* === CONTACTO GRID === */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+/* === TARJETAS DE CONTACTO === */
+.contact-card {
+    background: #111;
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    margin-bottom: 5px;
+    color: #ff4444;
+    font-size: 1.4rem;
+}
+
+.contact-card p {
+    color: #ccc;
+}
+
+/* === EFECTO HOVER === */
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* === COLORES DIFERENTES POR RED === */
+.instagram img { filter: drop-shadow(0 0 6px #ff00cc); }
+.facebook img { filter: drop-shadow(0 0 6px #0099ff); }
+.whatsapp img { filter: drop-shadow(0 0 6px #25d366); }
+
+/* === RESPONSIVE === */
+@media (max-width: 700px) {
+    .contact-card {
+        width: 90%;
+    }
+}
